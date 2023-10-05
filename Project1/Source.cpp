@@ -8,8 +8,8 @@ int main()
 	Mat gray, edge, output;
 
 	cvtColor(input, gray, COLOR_RGB2GRAY);
-	imshow("原始影像", input);
-	imshow("灰階影像", gray);
+	imshow("original image", input);
+	imshow("gray image", gray);
 
 	GaussianBlur(gray, edge, Size(3, 3), 0); // 高斯濾波
 	Canny(edge, output, 15, 10);
